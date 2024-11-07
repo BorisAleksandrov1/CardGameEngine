@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CardGameEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b100ab8087c646fdd1ff0a9103bec8b0998e05ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("CardGameEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CardGameEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

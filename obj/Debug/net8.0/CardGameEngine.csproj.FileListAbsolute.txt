@@ -1,0 +1,15 @@
+C:\Users\Admin\Projects\CardGameEngine\bin\Debug\net8.0\CardGameEngine.exe
+C:\Users\Admin\Projects\CardGameEngine\bin\Debug\net8.0\CardGameEngine.deps.json
+C:\Users\Admin\Projects\CardGameEngine\bin\Debug\net8.0\CardGameEngine.runtimeconfig.json
+C:\Users\Admin\Projects\CardGameEngine\bin\Debug\net8.0\CardGameEngine.dll
+C:\Users\Admin\Projects\CardGameEngine\bin\Debug\net8.0\CardGameEngine.pdb
+C:\Users\Admin\Projects\CardGameEngine\obj\Debug\net8.0\CardGameEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Projects\CardGameEngine\obj\Debug\net8.0\CardGameEngine.AssemblyInfoInputs.cache
+C:\Users\Admin\Projects\CardGameEngine\obj\Debug\net8.0\CardGameEngine.AssemblyInfo.cs
+C:\Users\Admin\Projects\CardGameEngine\obj\Debug\net8.0\CardGameEngine.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Projects\CardGameEngine\obj\Debug\net8.0\CardGameEngine.sourcelink.json
+C:\Users\Admin\Projects\CardGameEngine\obj\Debug\net8.0\CardGameEngine.dll
+C:\Users\Admin\Projects\CardGameEngine\obj\Debug\net8.0\refint\CardGameEngine.dll
+C:\Users\Admin\Projects\CardGameEngine\obj\Debug\net8.0\CardGameEngine.pdb
+C:\Users\Admin\Projects\CardGameEngine\obj\Debug\net8.0\CardGameEngine.genruntimeconfig.cache
+C:\Users\Admin\Projects\CardGameEngine\obj\Debug\net8.0\ref\CardGameEngine.dll

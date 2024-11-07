@@ -18,18 +18,14 @@ static class Blackjack
             playerScore += GetCardValue(playerDeck, i);
             dealerScore += GetCardValue(dealerDeck, i);
         }
-        
-        System.Console.WriteLine("Player first card is " + deck[playerIndex]);
-        System.Console.WriteLine("Dealer first card is " + deck[dealerIndex - 1]);
 
         playerIndex += 2;
         dealerIndex -= 2;
-        //Console.Read(); Console.Clear();
 
-        bool playerKeepLoop = true;
-        bool dealerKeepLoop = true;
+        bool isPlayerReady = false;
+        bool isDealerReady= false;
 
-        while (playerScore < 21 && dealerScore < 21 && playerKeepLoop || dealerKeepLoop)
+        while (playerScore < 21 && dealerScore < 21 && !isPlayerReady || !isDealerReady) 
         {
             System.Console.Write("PlayerCards are ");
             PrintDeck(playerDeck);
@@ -38,21 +34,24 @@ static class Blackjack
             
             System.Console.WriteLine("Do you want to hit or stand?");
             string playerMove = Console.ReadLine();
-            //Console.Clear();
+            Console.Clear();
             System.Console.WriteLine("Your move is " + playerMove);
 
             switch(playerMove)
             {
                 case "hit":
+                    if(!isPlayerReady)
+                    {
                     playerDeck.Add(deck[playerIndex]);
                     PrintDeck(playerDeck);
                     System.Console.WriteLine();
 
                     playerScore += GetCardValue(playerDeck, playerIndex);
                     playerIndex++;
+                    }
                     break;
                 case "stand":
-                    playerKeepLoop = false;
+                    isPlayerReady = true;
                     break;
                 default:
                     System.Console.WriteLine("Invalid command. Please try again.");
@@ -61,17 +60,21 @@ static class Blackjack
 
             string dealerMove = DealerMove(dealerScore);
             System.Console.WriteLine("Dealer's move: " + dealerMove);
+            System.Console.WriteLine();
             if(dealerMove == "stand")
             {
-                dealerKeepLoop = false;
+                isDealerReady = true;
             }
             else
             {
+                if(!isDealerReady)
+                {
                 dealerDeck.Add(deck[dealerIndex]);
                 PrintDeck(dealerDeck);
 
                 dealerScore += GetCardValue(dealerDeck, playerIndex - 1);
                 dealerIndex--;
+                }
             }
 
             if(playerScore > 21)
@@ -91,12 +94,12 @@ static class Blackjack
             }
             else if(playerScore == 21)
             {
-             System.Console.WriteLine("Player wins.");
+             System.Console.WriteLine("Player wins. You have the best hand.");
              return;
             }
             else if(dealerScore == 21)
             {
-             System.Console.WriteLine("Dealer wins.");
+             System.Console.WriteLine("Dealer wins. Dealer had the best hand.");
              return;
             }
             
@@ -104,11 +107,11 @@ static class Blackjack
 
         if(playerScore > dealerScore)
         {
-        System.Console.WriteLine("Player wins.");
+        System.Console.WriteLine($"Player wins. The difference {Math.Abs(playerScore - dealerScore)} points");
         }
         else
         {
-        System.Console.WriteLine("Dealer wins.");
+        System.Console.WriteLine($"Dealer wins. The difference {Math.Abs(playerScore - dealerScore)} points");
         }
 
 
